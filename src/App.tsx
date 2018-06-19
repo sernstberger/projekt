@@ -1,9 +1,11 @@
 import * as React from 'react';
 import './App.css';
 
-import Card from '@material-ui/core/Card';
+import { Link } from 'react-router-dom'
 
 import logo from './logo.svg';
+
+import Main from './Main';
 
 class App extends React.Component {
   public render() {
@@ -12,12 +14,10 @@ class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Projekt</h1>
+          <Link to="/">Foo</Link>
+          <Link to="/blah">Blah</Link>
         </header>
-        <Card>
-          <p className="App-intro">
-            To get started, edit <code>src/App.tsx</code> and save to reload.
-          </p>
-        </Card>
+        <Main />
       </div>
     );
   }
